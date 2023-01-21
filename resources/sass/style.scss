@@ -1,0 +1,115 @@
+body {
+    font-family: $font-family-sans-serif;
+}
+
+.header {
+
+    background-color: $body-bg;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    color: black;
+    font-size: 17px;
+    margin-top: 2rem;
+
+    span {
+        margin-left: 1rem;
+        cursor: pointer;
+    }
+
+    .login {
+        font-weight: bold;
+    }
+}
+
+.log {
+    h1 {
+        font-size: 24px;
+        font-weight: bold;
+        color: $primary-color;
+        margin-top: 2rem;
+    }
+
+    p {
+        margin-top: -15px;
+    }
+}
+
+.text {
+    padding-top: 8rem;
+
+    h2 {
+        font-size: 50px;
+        font-weight: bold;
+        color: black;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+.image {
+    img {
+        width: 100%;
+    }
+}
+
+.btn-container {
+    button {
+        margin-right: 2rem;
+    }
+
+}
+
+.btn-borded {
+    padding: 10px 10px;
+    background-color: $primary-color;
+    color: white;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn-outlined {
+    padding: 8px 10px;
+    border-radius: 5px;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+
+    /* your css styles */
+    .nav{
+        display: none;
+    }
+    .home {
+
+        .content {
+            display: flex;
+            flex-direction: column-reverse;
+
+            .text {
+                padding-top: 0;
+
+                h2 {
+                    font-size: 30px;
+                }
+
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+        .image{
+            margin-top: -2rem;
+        }
+    }
+    .btn-container{
+        display: flex;
+        justify-content: center;
+    }
+}
